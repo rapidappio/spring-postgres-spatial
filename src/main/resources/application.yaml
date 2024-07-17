@@ -1,0 +1,22 @@
+logging:
+  level:
+    org:
+      hibernate:
+        orm:
+          jdbc:
+            bind: trace
+spring:
+  datasource:
+    url:
+    username:
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  data:
+    jdbc:
+      dialect: postgresql
